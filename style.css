@@ -1,0 +1,83 @@
+body {
+  /*background: #14BDAC;*/
+  margin-top: 50px;
+  color: #545454;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.container {
+  background: #14BDAC;
+  margin: 50px;
+  padding: 50px;
+  /*margin-top: 100px;*/
+  /*border-radius: 25px;*/
+
+}
+
+.title {
+	text-align: center;
+}
+
+.title span {
+  color: #F2EBD3;
+}
+
+.status-action {
+  display: flex;
+  margin-top: 25px;
+  font-size: 24px;
+  justify-content: space-around;
+  height: 30px;
+}
+
+.status span {
+  color: #F2EBD3;
+}
+
+.reset {
+  cursor: pointer; 
+}
+
+.reset:hover {
+  color: #F2EBD3;
+}
+
+.game-grid {
+  background: #0DA194;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* means: we want 3 spaces repeated with 1fr */
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 50px;
+}
+
+.game-cell {
+  cursor: pointer; /*how we can see the mouse curser as a pointer as hover the cells */
+  height: 200px;
+  width: 200px;
+  background: #14BDAC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x, .o {
+  cursor: auto ;
+}
+
+.x::before {
+  content: '×';
+  font-size: 200px;
+
+}
+.o::before {
+  content: '○';
+  font-size: 225px;
+  color: #F2EBD3;
+}
+
+.won::before {
+  color: #A61944;
+}
